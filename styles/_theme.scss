@@ -2,6 +2,14 @@ html {
   direction: rtl;
 }
 
+body {
+ height: 100vh;
+}
+
+#__next {
+  height: 100vh; 
+}
+
 .form-control {
   &::placeholder {
     color: $gray-200;
