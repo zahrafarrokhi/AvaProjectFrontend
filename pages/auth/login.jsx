@@ -1,11 +1,11 @@
 import { Button } from '@mui/material';
 import React from 'react'
-import loginlayout from '../../components/loginlayout';
+import LoginLayout from '../../components/loginlayout';
 import styles from '../../styles/login.module.scss'
  function login() {
   return (
     <div className={`d-flex flex-column`}>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-column">
         <label>ورود / ثبت‌‌نام</label>
         <input type="text"
            placeholder='شماره موبایل'
@@ -17,6 +17,6 @@ import styles from '../../styles/login.module.scss'
   )
 }
 login.getLayout=(page)=>{
-  return(<loginlayout>{page}</loginlayout>)
+  return(<LoginLayout>{page}</LoginLayout>)
 }
 export default login;
