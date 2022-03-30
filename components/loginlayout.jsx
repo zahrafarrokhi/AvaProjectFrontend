@@ -1,9 +1,16 @@
-import React from 'react'
-import styles from '../styles/loginlayout.module.scss'
 
-const  loginlayout = (props) =>{
+import React from "react";
+import styles from "../styles/loginlayout.module.scss";
+
+const loginlayout = (props) => {
+  const {children} = props;
   return (
-    <div>loginlayout</div>
-  )
-}
+    <div className={`d-flex flex-column ${styles.bgcnt}`}>
+      <div className={`d-flex flex-column ${styles.cnt}`}>
+
+        {children}
+      </div>
+    </div>
+  );
+};
 export default loginlayout;
