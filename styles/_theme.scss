@@ -1,0 +1,7 @@
+
+
+.form-control {
+  &::placeholder {
+    color: $gray-200;
+  }
+}

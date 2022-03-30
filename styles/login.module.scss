@@ -1,0 +1,9 @@
+@import "colors";
+@import "bootstrap-imports";
+
+.phone_input{
+  // width: 100% !important;
+  &::placeholder {
+    color: $gray-200;
+  }
+}
