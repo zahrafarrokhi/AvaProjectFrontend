@@ -1,6 +1,7 @@
 @import "colors";
 @import "bootstrap-imports";
 
+
 .phone_input{
   // width: 100% !important;
   &::placeholder {
@@ -8,6 +9,7 @@
     font-size: 0.9em;
   }
 }
+
 .subtitle{
   // font-size: 0.9em;
 }

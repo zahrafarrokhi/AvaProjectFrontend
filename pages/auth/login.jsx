@@ -34,6 +34,6 @@ function Login() {
   );
 }
 Login.getLayout = (page) => {
-  return <LoginLayout>{page}</LoginLayout>;
+  return <LoginLayout back={false}>{page}</LoginLayout>;
 };
 export default Login;

@@ -7,10 +7,26 @@
 }
 
 .cnt {
+  position: relative;
   background-color: $white;
   // background-color: red;
   width:80%;
   min-height: 80%;
   box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.07);
   border-radius: 1.2em;
+}
+.back_link{
+
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size: 1.2em;
+  
+  @include media-breakpoint-up(md){
+    top:45px;
+    left: 40px;
+  }
+  
+  font-size: 1.4em;
+  color:$gray-300;
 }
