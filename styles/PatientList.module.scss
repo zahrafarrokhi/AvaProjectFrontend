@@ -1,0 +1,79 @@
+@import "./colors";
+@import "./bootstrap-imports";
+
+.title {
+  margin-top: 10em;
+  margin-bottom: 3em;
+  &,
+  & > * {
+    font-size: 0.9rem;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold !important;
+  
+    @include media-breakpoint-up(md) {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      // width: 320px;
+      border-radius: 0.5em;
+      text-align: center;
+    }
+  }
+}
+
+.btn_submit {
+  width: 200px;
+  border-radius: 0.5em;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    width: 320px;
+  }
+}
+
+.btn {
+  width: 200px;
+  border-radius: 0.5em;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 320px;
+    border-radius: 0.5em;
+    text-align: center;
+  }
+}
+
+.btnsm {
+  padding: 0.3em;
+}
+
+.sbtn {
+  text-align: center;
+  color: black !important;
+  border: 1px solid $stroke2 !important;
+  background-color: $white !important;
+  line-height: 1.6em;
+  &:checked,
+  &:active,
+  &:focus,
+  &:hover {
+    border: 2px solid $primary !important;
+    background-color: $white !important;
+    -webkit-box-shadow: 0 0 0 0rem rgb(63 169 245 / 50%) !important;
+    box-shadow: 0 0 0 0rem rgb(63 169 245 / 50%) !important;
+  }
+}
+
+.sbtn-checked {
+  border: 2px solid $primary !important;
+  background-color: $white !important;
+  -webkit-box-shadow: 0 0 0 0rem rgb(63 169 245 / 50%) !important;
+  box-shadow: 0 0 0 0rem rgb(63 169 245 / 50%) !important;
+}
+
+.icon {
+  width: 94px;
+  height: 94px;
+  padding: 5px;
+  text-align: center;
+}
