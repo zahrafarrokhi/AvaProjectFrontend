@@ -1,0 +1,109 @@
+@import "colors";
+@import "bootstrap-imports";
+
+.cnt {
+  padding: 2em 1.5em;
+}
+
+.imagepf {
+  // background-color: aqua;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  &:focus {
+    outline: none;
+  }
+}
+.imagebtn {
+  height: 40px;
+  position: absolute;
+  bottom: -0.5em;
+  right: 50px;
+  color: $black;
+  font-size: 0.8em !important;
+}
+.imageicn {
+  color: $secondary;
+  border: 1px solid $secondary;
+  border-radius: 0.4em;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 700 !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+.item {
+  // width:25%;
+  flex: 1 0 90%;
+  margin: 1em 0;
+  @include media-breakpoint-up(md) {
+    flex: 1 0 26%;
+    margin: 1rem;
+  }
+  & > input:not([type="file"]),
+  & > select,
+  & > textarea {
+    width: 100% !important;
+  }
+}
+.itemimg {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.txtbox {
+  background-color: aqua;
+}
+.textitem {
+  flex: 1 0 100%;
+  @include media-breakpoint-up(md) {
+    flex: 1 0 calc(100% - 4rem);
+    margin: 1rem;
+  }
+}
+.textarea {
+  width: 100% !important;
+
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.checkboxlabel {
+  border-bottom: 1px solid $gray-600;
+  width: 100%;
+}
+.btn_submit {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: calc(100% / 3 - 2rem);
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  box-shadow: 0px 4px 20px rgba(31, 86, 192, 0.3);
+  border-radius: 10px;
+}
+
+.checkbox {
+  @include media-breakpoint-up(md) {
+    & > div > :first-child {
+      margin-right: 0px !important;
+    }
+  }
+}
+
+.checkboxitem {
+  // direction: rtl;
+  & > input {
+    float: right !important;
+    margin-left: unset !important;
+    margin-right: -1.5em !important;
+  }
+}
+
+.image {
+  border-radius: 50%;
+  border: 1px solid $gray-600;
+  width: 100px;
+  height: 100px;
+}
