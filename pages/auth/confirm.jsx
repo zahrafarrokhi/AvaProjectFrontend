@@ -16,7 +16,11 @@ const Confirm = (props) => {
 
   const decrease_timer = () => {
     const timer = setInterval(() => {
-      setTime((t)=>t - 1);
+      setTime((t) => (t > 0 ? t - 1 : 0));
+      // setTime((t)=> {
+      //   if(t > 0) return t - 1
+      //   else return 0
+      // });
     }, 1000);
   };
   useEffect(() => {
