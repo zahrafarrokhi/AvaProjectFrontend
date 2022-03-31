@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LoginLayout from "../../components/loginlayout";
 import styles from "../../styles/Confirm.module.scss";
 import VerificationInput from "react-verification-input";
@@ -13,7 +13,15 @@ const Confirm = (props) => {
   const [error, setError] = useState(false);
   const [time, setTime] = useState(EXP_TIME);
   const theme = useTheme();
-  
+
+  const decrease_timer = () => {
+    const timer = setInterval(() => {
+      setTime(time - 1);
+    }, 1000);
+  };
+  useEffect(() => {
+    decrease_timer();
+  }, []);
 
   return (
     <div
