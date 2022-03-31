@@ -89,3 +89,13 @@
 .error{
   color:$danger;
 }
+
+.refresh {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  & > * {
+    stroke: $gray-900;
+   
+  }
+}

@@ -106,7 +106,7 @@ const Confirm = (props) => {
         >
           ارسال مجدد
         </div>
-        <div className="d-flex ">
+        <div className="d-flex align-items-center ">
           <GrRefresh className={`${styles.refresh}`} />
           {/* 90 => floor(1.5) -> 1 =>str(1)=>'1 */}
           {/* '1'.padStart(2, '0') = '01' */}
