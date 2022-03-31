@@ -1,15 +1,30 @@
 @import "colors";
 @import "bootstrap-imports";
 
-
-.phone_input{
+.phone_input {
   // width: 100% !important;
   &::placeholder {
     color: $gray-200;
     font-size: 0.9em;
   }
+  width: 300px;
+  @include media-breakpoint-down(md) {
+    width: 240px;
+  }
 }
 
-.subtitle{
+.subtitle {
   // font-size: 0.9em;
+}
+
+.icontooth {
+  width: 70px;
+  height: 70px;
+  &,
+  & > *,
+  & > * > * {
+    stroke: $stroke2;
+  }
+  // position: absolute;
+  // top: 100px;
 }

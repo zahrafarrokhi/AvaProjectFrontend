@@ -3,11 +3,17 @@ import React from "react";
 import LoginLayout from "../../components/loginlayout";
 import styles from "../../styles/login.module.scss";
 import { useTheme } from "@mui/material/styles";
+import MainIcon from "../../public/icons/tooth-svgrepo-com.svg";
 
 function Login() {
   const theme = useTheme();
   return (
-    <div className={`d-flex flex-column`}>
+    <div
+      className={`d-flex flex-column flex-grow-1 align-self-stretch align-items-center justify-content-center`}
+    >
+      <MainIcon
+        className={`d-flex d-md-none align-self-center ${styles.icontooth}`}
+      />
       <div className="d-flex flex-column my-3">
         <label className={`d-flex m-1 ${styles.subtitle}`}>
           ورود / ثبت‌‌نام

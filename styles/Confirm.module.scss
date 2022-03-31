@@ -1,14 +1,14 @@
 @import "colors";
 @import "bootstrap-imports";
 
-.cnt{
+.cnt {
   margin-top: 6em;
 }
 .titlephone {
   color: $black;
-  font-weight: bold!important;
+  font-weight: bold !important;
   font-size: 0.8em;
-  
+
   text-align: center;
 }
 
@@ -22,11 +22,10 @@
   // width: 260px;
   // @include media-breakpoint-down(md) {
   //   width: 230px;
-   
+
   // }
 }
-.cntbox{
-
+.cntbox {
 }
 
 .codecontainer {
@@ -65,16 +64,16 @@
 // .inactive{
 
 // }
-.selected{
+.selected {
   border: 1px solid $border-color;
 }
 
-.cntbox{
+.cntbox {
   margin-top: 5em;
 }
 
 .refreshcnt {
-  width: 240px;
+  width: 230px;
   @include media-breakpoint-up(md) {
     width: 260px;
   }
@@ -86,8 +85,8 @@
     color: unset;
   }
 }
-.error{
-  color:$danger;
+.error {
+  color: $danger;
   font-size: 0.9em;
 }
 
@@ -97,6 +96,5 @@
   padding: 5px;
   & > * {
     stroke: $gray-900;
-   
   }
 }
