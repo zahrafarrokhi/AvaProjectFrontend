@@ -16,6 +16,8 @@ const Confirm = (props) => {
   const theme = useTheme();
 
   const decrease_timer = () => {
+    if(timerref.current) clearInterval(timerref.current) // only one interval can run at a time
+    
     const timer = setInterval(() => {
       setTime((t) => (t > 0 ? t - 1 : 0));
       // setTime((t)=> {
@@ -33,7 +35,7 @@ const Confirm = (props) => {
 
     return () => {
       // Page unmount -> close
-      clearInterval(timerref.current);
+      if(timerref.current) clearInterval(timerref.current);
     };
   }, []);
 
